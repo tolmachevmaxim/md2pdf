@@ -5,7 +5,7 @@ description: Convert local Markdown files into PDF files. Use when asked to expo
 
 # md-to-pdf
 
-Convert Markdown with the bundled Python package and Playwright renderer.
+Use the repository-local bootstrap and wrapper scripts.
 
 ## Quick Commands
 

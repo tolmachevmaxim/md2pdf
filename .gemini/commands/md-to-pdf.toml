@@ -1,0 +1,13 @@
+description = "Convert a Markdown file into a PDF using the repo-local md-to-pdf workflow."
+
+prompt = """
+Convert the requested Markdown file into a PDF using this repository.
+
+Workflow:
+1. From the repository root, run `python scripts/bootstrap.py` if `.venv` is missing or dependencies are not installed.
+2. Convert with `python scripts/md2pdf.py` using `--renderer cmarkgfm` on Windows/Linux.
+3. Use `--renderer qlmarkdown` only on macOS with QLMarkdown installed.
+4. Verify the output PDF exists and has non-zero size before reporting success.
+
+User request: 
+"""
