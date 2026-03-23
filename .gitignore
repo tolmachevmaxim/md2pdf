@@ -1,0 +1,6 @@
+.venv/
+windows-e2e/
+output/
+*.egg-info/
+__pycache__/
+*.pyc

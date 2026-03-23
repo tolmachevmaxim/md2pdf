@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md2pdf"
+version = "0.1.0"
+description = "Convert Markdown files to PDF with Playwright and selectable renderers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "cmarkgfm",
+    "playwright",
+]
+
+[project.scripts]
+md2pdf = "md2pdf:main"
+
+[tool.setuptools.packages.find]
+include = ["md2pdf*"]
